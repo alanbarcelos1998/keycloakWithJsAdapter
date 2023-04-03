@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keycloak</title>
+    <script src="keycloak-js-adapter-npm-dist-21.0.1/dist/keycloak.js"></script>
+    <script src="keycloak.js"></script>
+  </head>
+
+  <body>
+    <h1>Integração do Keycloak com JavaScript</h1>
+    <button id="logout">Logout</button>
+    <button id="login">
+      <a href="http://10.3.20.97:5500/login.html">Login</a>
+    </button>
+    <button id="home">
+      <a href="http://10.3.20.97:5500/home.html">Home</a>
+    </button>
+    
+    <script>
+      initKeycloak("http://10.3.20.97:5500/index.html");
+
+      refreshToken();
+
+      document.getElementById("logout").addEventListener("click", function () {
+        logout();
+      });
+    </script>
+  </body>
+</html>

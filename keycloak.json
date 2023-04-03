@@ -1,0 +1,8 @@
+{
+  "realm": "viprealm",
+  "auth-server-url": "http://ip172-19-0-10-cglfo62e69v000a5gut0-8080.direct.labs.play-with-docker.com/",
+  "ssl-required": "external",
+  "resource": "vipclient",
+  "public-client": true,
+  "confidential-port": 0
+}
